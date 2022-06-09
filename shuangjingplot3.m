@@ -1,0 +1,11 @@
+clc;clear;
+[t,y]=ode45('shuangjing3',[0,300],[0.2,0.1]);
+subplot(121)
+plot(t,y(:,1),'k')
+xlabel('t')
+ylabel('x')
+[t,y]=ode45('shuangjing3',[0,300],[0.205,0.1]);
+subplot(122)
+plot(t,y(:,1),'k')
+xlabel('t')
+ylabel('x')

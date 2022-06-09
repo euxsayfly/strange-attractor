@@ -1,0 +1,11 @@
+clc;clear;
+[t,y]=ode45('rossler',[0,200],[0;0;0]);
+figure(1)
+plot(y(:,1),y(:,2),'k')
+xlabel('x')
+ylabel('y')
+figure(2)
+plot3(y(:,1),y(:,2),y(:,3),'k')
+xlabel('x')
+ylabel('y')
+zlabel('z')
